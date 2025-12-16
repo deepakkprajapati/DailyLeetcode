@@ -19,19 +19,22 @@ vector<string> thefunc(){
     for(int i=0; i<s; i++){
         bool t=false;
         for(int j=0; j<s; j++){
-            if(businessLine[i] == cat[j])
+            if(businessLine[i] == cat[j]){
                 t=true;
                 break;
+            }
         }
         bl.push_back(t);
-
+        bool tt=false;
         for (unsigned char c : code[i]){ 
-            if (isalnum(c) && c == '_'){}
-            else {
-                co.push_back(false);
+            if (false == (isalnum(c) && c == '_')){
+                tt==false;
                 break;
             }
-            co.push_back(true);
+            else {
+                co.push_back(tt);
+                break;
+            }
         }
     }
     for (const auto& num : bl) {
