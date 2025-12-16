@@ -1,0 +1,53 @@
+# Ignore build and output directories (recursively in all subdirectories)
+**/build/
+**/out/
+**/bin/
+**/obj/
+
+# Ignore executables (recursively in all subdirectories)
+**/*.exe
+**/*.out
+**/*.app
+**/*.dll
+**/*.so
+**/*.dylib
+
+# Ignore object files (recursively in all subdirectories)
+**/*.o
+**/*.obj
+**/*.lo
+**/*.la
+
+# Ignore dependency files (recursively in all subdirectories)
+**/*.d
+
+# Ignore IDE-specific files (for common C++ IDEs)
+# Visual Studio
+.vscode/
+.vs/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln*
+**/*.vcxproj*
+**/*.vcxproj.filters
+
+# CLion
+.idea/
+
+# Xcode
+**/*.xcworkspace/
+**/*.xcuserstate
+.idea/
+
+# CMake files (if you are using CMake)
+**/CMakeCache.txt
+**/CMakeFiles/
+**/CMakeScripts/
+**/cmake_install.cmake
+**/Makefile
+
+# Miscellaneous
+**/*~         # Backup files
+**/*.swp      # Swap files (from editors like Vim)
+**/*.log      # Log files
